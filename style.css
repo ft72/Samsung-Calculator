@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #2d2d2d;
+}
+
+.container{
+  margin-top: 9%;
+  margin-left: 39%;
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #edc98e;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    background: #edc98e;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.search-box input{
+  background: #edc98e;
+}
+
+.search-box input{
+    color: #2d2d2d;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2d2d2d;
+    text-transform: capitalize;
+}
+
+
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #2d2d2d;
+    background: #edc98e;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover{
+    color: #edc98e;
+    background: #2d2d2d;
+}
+
+.search-box i{
+    position: absolute;
+    color: #2d2d2d;
+    font-size: 28px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+/* NAME : FAIZAN TAHIR
+REG : SP21-BSE-065 */
+.weather-box .temperature{
+    position: relative;
+    color: #2d2d2d;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: #2d2d2d;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.weather-details .humidity, .weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather-details i{
+    color: #2d2d2d;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-details span{
+    color: #2d2d2d;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: #2d2d2d;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+.navbar-menu {
+    background-color:#edc98e;
+    display: flex;
+    color: #333;
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+  
+  @media (max-width: 450px) {
+    .navbar-menu {
+      flex-direction: column;
+    }
+  }
+
+  
+  
+  .navbar-menu > .item {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    color: #edc98e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: .25s;
+  }
+
+  footer {
+    color:#edc98e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .imag{
+    position: absolute;
+    display: flex;
+    width:110px;
+    height:110px;
+    margin-left: 46.4%;
+    margin-top: -20px;
+  }
+  .left{
+    float: left;
+  }
+  .navbar-menu > .item::after {
+    background-color: #2d2d2d;
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    transition-duration: .25s;
+    width: 100%;
+  }
+  
+  .navbar-menu > .item > .link {
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none ;
+  }
+  
+  .navbar-menu > .item:hover::after, 
+  .navbar-menu > .item.-active::after {
+    transform: scaleY(1.25);
+  }
+  
+  .navbar-menu > .item::after {
+    content: '';
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    color: #faf4d6;
+  }
+  
+  html {
+    
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #fff2ce;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#edc98e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2d2d2d;
+    font-weight: 700;
+    text-decoration: none ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+  }
+
+  .dropdown-content h3:hover{
+    background-color:#413d39;
+    color: #edc98e;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .box{
+    display: flex;
+    width: fit-content;
+    margin-left: auto; 
+  }
+
+  .nopad{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 900;
+    font-size: larger;
+    padding-left: 25px;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  
+
